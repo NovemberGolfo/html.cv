@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +16,18 @@
             background: #f2f2f2;
         }
 
-        .container {
-            max-width: 1170px;
-            margin: 0 auto;
-            padding: 50px;
-        }
+       .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+        
 
         h1 {
             font-weight: bold;
@@ -41,68 +47,65 @@
             line-height: 1.5;
             margin-bottom: 20px;
         }
-
-        /* Agregar estilos para el recuadro doble */
-        .double-border {
-            border: 2px solid #333;
+        
+        .recuadro {
+            border: 2px solid #ddd;
             padding: 20px;
+            margin-bottom: 50px;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="double-border"> <!-- Agregar el recuadro doble alrededor del encabezado -->
+    <div class="recuadro">
+        <header>
             <img class="profile-img" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Foto de perfil">
             <h1>Douglas Bailey</h1>
             <p><i class="fas fa-map-marker-alt"></i> 7894 Stevens Creek Blvd, San Francisco, CA</p>
             <p><i class="fas fa-envelope"></i> douglas.bailey@example.com</p>
             <p><i class="fas fa-phone"></i> (915) 989-9873</p>
-        </div>
-    </header>
+        </header>
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li>Melbourne University BSc degree in Computer Science Completed in 2016</li>
+            </ul>
+        </section>
+        <div class="container">
     <section>
-        <h2>Educación</h2>
-        <ul>
-            <li>Melbourne University BSc degree in Computer Science Completed in 2016</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Experiencia laboral</h2>
-        <ol>
-            <h3>
-                Desarrollador en IBM (2000 - Presente)
-            </h3>
-        </ol>
-        <ul>
-            <li>Comprender los requisitos de software.</li>
-            <li>Modelizar y refinar especificaciones a fin de determinar un diseño detallado para implementar la funcionalidad requerida.</li>
-            <li>Construir o adaptar clases, módulos u otras piezas de software.</li>
-            <li>Revisar el código para resolver defectos o mejorarlo.</li>
-            <li>Crear documentos de implementación.</li>
-            <li>Trabajar en estrecha colaboración con otros desarrolladores.</li>
-            <li>Optimizar el rendimiento de las aplicaciones.</li>
-            <li>Detectar oportunidades de mejora o conformidades y observaciones para incluirlas en el sistema de mejora continua.</li>
-        </ul>
-    </section>
+    <h2>Experiencia laboral</h2>
+    <ol>
+        <li>
+            <h3>Desarrollador en IBM (2000 - Presente)</h3>
+            <ul>
+                <li>Comprender los requisitos de software.</li>
+                <li>Modelizar y refinar especificaciones a fin de determinar un diseño detallado para implementar la funcionalidad requerida.</li>
+                <li>Construir o adaptar clases, módulos u otras piezas de software.</li>
+                <li>Revisar el código para resolver defectos o mejorarlo.</li>
+                <li>Crear documentos de implementación.</li>
+                <li>Trabajar en estrecha colaboración con otros desarrolladores.</li>
+                <li>Optimizar el rendimiento de las aplicaciones.</li>
+                <li>Detectar oportunidades de mejora o conformidades y observaciones para incluirlas en el sistema de mejora continua.</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+</div>
+   <div class="container">
     <section>
         <h2>Habilidades</h2>
-        <ol type=”A”>
-                <li> React
-                </li>
-                <li> Ruby on Rails
-                </li>
-            </ol>
+        <ol type="A">
+            <li> React</li>
+            <li> Ruby on Rails</li>
+        </ol>
     </section>
     <section>
         <h2>Intereses Personales</h2>
         <ul>
-            <li> Viajar
-            </li>
-            <li> Ciencia ficción
-            </li>
+            <li> Viajar</li>
+            <li> Ciencia ficción</li>
         </ul>
-
     </section>
+    </div>
+</div>
 </body>
-
 </html>
